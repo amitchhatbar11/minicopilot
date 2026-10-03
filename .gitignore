@@ -1,0 +1,8 @@
+node_modules/
+dist/
+target/
+crates/miniscript_wasm/pkg/
+.env
+*.log
+.DS_Store
+*.tsbuildinfo

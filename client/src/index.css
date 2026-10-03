@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0a0a0b;
+  color: #e8e6e1;
+  font-family: 'IBM Plex Sans', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Instrument panel: flat surface, hairline border. */
+.panel {
+  background: #111113;
+  border: 1px solid #26262b;
+}
+
+/* Small monospace section eyebrow used on panel headers. */
+.eyebrow {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8b8a84;
+}
+
+/* Faint blueprint dot field, used behind the canvas only. */
+.dotfield {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* React Flow tweaks */
+.react-flow__attribution {
+  display: none;
+}
+.react-flow__controls-button {
+  background: #17171a !important;
+  border-bottom: 1px solid #26262b !important;
+  color: #8b8a84 !important;
+}
+.react-flow__controls-button:hover {
+  background: #26262b !important;
+}
+.react-flow__controls-button svg {
+  fill: currentColor;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #26262b;
+  border: 2px solid #0a0a0b;
+  border-radius: 0;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::selection {
+  background: rgba(247, 147, 26, 0.28);
+}
